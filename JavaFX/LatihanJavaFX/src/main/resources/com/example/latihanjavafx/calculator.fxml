@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f7dc6f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.latihanjavafx.controller.CalculatorController">
+    <children>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #f5f5f5;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <Label alignment="CENTER" prefHeight="41.0" prefWidth="1209.0" style="-fx-background-color: lightgray;" text="Simple Calculator">
+            <font>
+               <Font name="Calibri Bold Italic" size="36.0" />
+            </font>
+         </Label>
+            <HBox alignment="CENTER">
+                <Label style="-fx-font-size: 18px; -fx-text-fill: #333333;" text="Number 1:  " />
+                <TextField fx:id="number1Field" style="-fx-font-size: 18px; -fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-border-width: 1px;" />
+            </HBox>
+            <HBox alignment="CENTER">
+                <Label style="-fx-font-size: 18px; -fx-text-fill: #333333;" text="Number 2:  " />
+                <TextField fx:id="number2Field" style="-fx-font-size: 18px; -fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-border-width: 1px;" />
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Button onAction="#add" style="-fx-font-size: 18px; -fx-padding: 10 20; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-border-radius: 5px; -fx-border-width: 0px;" text="+" />
+                <Button onAction="#subtract" style="-fx-font-size: 18px; -fx-padding: 10 20; -fx-background-color: #F44336; -fx-text-fill: white; -fx-border-radius: 5px; -fx-border-width: 0px;" text="-" />
+                <Button onAction="#multiply" style="-fx-font-size: 18px; -fx-padding: 10 20; -fx-background-color: #FFC107; -fx-text-fill: white; -fx-border-radius: 5px; -fx-border-width: 0px;" text="*" />
+                <Button onAction="#divide" style="-fx-font-size: 18px; -fx-padding: 10 20; -fx-background-color: #2196F3; -fx-text-fill: white; -fx-border-radius: 5px; -fx-border-width: 0px;" text="/" />
+            </HBox>
+            <HBox alignment="CENTER">
+                <Label style="-fx-font-size: 18px; -fx-text-fill: #333333;" text="Result : " />
+                <Label fx:id="resultLabel" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            </HBox>
+        </VBox>
+      <Button layoutX="647.0" layoutY="658.0" mnemonicParsing="false" onAction="#logout" prefHeight="0.0" prefWidth="54.0" text="Logout" />
+      <Button layoutX="593.0" layoutY="658.0" mnemonicParsing="false" onAction="#backPage" text="Back" />
+    </children>
+</AnchorPane>

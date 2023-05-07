@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.latihanjavafx.controller.Controller">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#017516" height="720.0" strokeType="INSIDE" width="660.0" />
+        <Label layoutX="872.0" layoutY="193.0" text="Login Page" textFill="#545454">
+            <font>
+                <Font name="Arial Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameField" layoutX="765.0" layoutY="288.0" prefHeight="25.0" prefWidth="410.0" />
+        <PasswordField fx:id="passwordField" layoutX="765.0" layoutY="348.0" prefHeight="25.0" prefWidth="410.0" />
+        <Label layoutX="765.0" layoutY="271.0" text="Username" />
+        <Label layoutX="765.0" layoutY="331.0" text="Password" />
+        <Button layoutX="947.0" layoutY="405.0" mnemonicParsing="false" text="Login" onAction="#loginAction" />
+    </children>
+</AnchorPane>
